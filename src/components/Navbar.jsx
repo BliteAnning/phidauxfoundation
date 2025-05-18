@@ -51,12 +51,11 @@ const Navbar = ({setShowDonate}) => {
           <NavItem to="/" onClick={() => setIsOpen(false)}>Home</NavItem>
           <NavItem to="/about" onClick={() => setIsOpen(false)}>About</NavItem>
           <NavItem to="/projects" onClick={() => setIsOpen(false)}>Projects</NavItem>
-          <NavItem to="/contact" onClick={() => setIsOpen(false)}>Contact</NavItem>
           <button className="mt-4 px-4 py-2 bg-purple-600 rounded-lg hover:bg-purple-700"
             onClick={() => {setShowDonate(true);
             setIsOpen(false)}}>
             Donate🤍
-          </button>*
+          </button>
         </div>
       )}
     </div>

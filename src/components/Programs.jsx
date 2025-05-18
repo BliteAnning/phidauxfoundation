@@ -124,7 +124,7 @@ const Programs = ({setShowDonate}) => {
                     </p>
                     <div className="flex justify-between w-full mt-4 text-gray-700">
                         <p>Goal: <span className="font-bold text-green-600">$2000</span></p>
-                        <p>Raised: <span className="font-bold text-blue-600">$900</span></p>
+                        <p>Raised: <span className="font-bold text-blue-600">$500</span></p>
                     </div>
                     <motion.button
                         className="mt-4 px-6 py-2 text-white bg-green-600 rounded-lg text-lg font-medium shadow-md 
@@ -180,7 +180,7 @@ const Programs = ({setShowDonate}) => {
                     </p>
                     <div className="flex justify-between w-full mt-4 text-gray-700">
                         <p>Goal: <span className="font-bold text-green-600">$2000</span></p>
-                        <p>Raised: <span className="font-bold text-blue-600">$900</span></p>
+                        <p>Raised: <span className="font-bold text-blue-600">$700</span></p>
                     </div>
                     <motion.button
                         className="mt-4 px-6 py-2 text-white bg-green-600 rounded-lg text-lg font-medium shadow-md 
