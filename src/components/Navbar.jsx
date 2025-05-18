@@ -21,14 +21,14 @@ const Navbar = ({setShowDonate}) => {
     </NavLink>
   );
   return (
-    <div className="flex justify-between sticky min-h-20 items-center px-4 bg-black backdrop-blur-sm">
+    <div className="flex justify-between  min-h-20 items-center sm:px-4 bg-[#0a0b0e]">
       <div className="logo"><img src={logo} alt="Logo" className="h-12 w-10 object-cover" /></div>
       <div className=" hidden sm:flex gap-4 text-white text-xl">
 
         <NavItem to="/">Home</NavItem>
         <NavItem to="/about">About</NavItem>
         <NavItem to="/projects">Projects</NavItem>
-        <NavItem to="/contact">Contact</NavItem>
+        
 
 
       </div>

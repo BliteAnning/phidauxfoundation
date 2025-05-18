@@ -17,7 +17,7 @@ const Programs = ({setShowDonate}) => {
         <section className=" finisher-header flex flex-col gap-20 bg-gradient-to-l from-gray-200 to-white">
             <ParticleBg/>
             <motion.section
-                className="md:flex items-center justify-center gap-8 sm:px-64"
+                className="md:flex px-5 items-center justify-center gap-8 sm:px-64"
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 0.5 }}
@@ -43,8 +43,9 @@ const Programs = ({setShowDonate}) => {
                 >
                     <h1 className="text-3xl font-bold text-gray-800">Saakrom 2025 was Epic</h1>
                     <p className="text-gray-600 mt-4">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti laboriosam repudiandae cumque! Error beatae, reprehenderit
-                        officia ipsa dolores tempora? Quod deleniti corrupti voluptatem sint harum molestias voluptas distinctio architecto tenetur.
+                        It is a small village with more than 60 pupils and 200 adolescents in the upper elementary and middle school. There was any source of good education in the community. 
+                        The most successful people in the community are farmers so the youth don't see the essence of going to school but rather involve themselves in farming. The students are not motivated to study at all, so as a Young Philanthropist and Educational Advocate we collaborated with Smile Home Ghana Foundation and Modern-Day Humanitarian to help the people in Saakrom. 
+                        We used the whole 2024 to make sure we have unveiled the impossibilities in Saakrom. 
                     </p>
 
                     {/* Styled Button */}
@@ -62,7 +63,7 @@ const Programs = ({setShowDonate}) => {
             </motion.section>
 
             <motion.section
-                className="md:flex items-center justify-center gap-8 sm:px-64"
+                className="md:flex items-center px-5 justify-center gap-8 sm:px-64"
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 0.5 }}
@@ -79,8 +80,8 @@ const Programs = ({setShowDonate}) => {
                 >
                     <h1 className="text-3xl font-bold text-gray-800">We are Tender Charity Foundation</h1>
                     <p className="text-gray-600 mt-4">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi similique dolore assumenda beatae
-                        modi. Blanditiis, in ab? Nihil temporibus voluptatum eligendi? Doloribus aperiam in sapiente, quasi ducimus quis neque totam.
+                        Phidaux foundation was founded in December 2020 by Phidaux Amankwaa, driven by passion to make a positive impact in the lives of others. 
+                        Our journey began with a simple yet profound question: "What if the possible was possible?" This inquiry sparked a movement, inspiring us to challenge conventional wisdom and push beyond perceived Limits.
                     </p>
 
 
@@ -105,8 +106,9 @@ const Programs = ({setShowDonate}) => {
                 </motion.div>
             </motion.section>
 
-            <section className="bg-blue-400 ">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 sm:px-64 py-8">
+            <section className="bg-black ">
+                <h1 className="mt-5 flex justify-center items-center text-xl sm:text-3xl font-light text-white"> <span className="text-3xl text-green-600">Explore</span> our projects in the recent years</h1>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 px-5 sm:px-64 py-8">
                 {/** Card 1 **/}
                 <motion.div
                     className="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center text-center"
@@ -116,9 +118,9 @@ const Programs = ({setShowDonate}) => {
                     viewport={{ once: false, amount: 0.2 }}
                 >
                     <img src={img3} alt="Saakrom 2025" className="h-48 w-48 object-cover rounded-lg" />
-                    <h2 className="text-2xl font-bold mt-4">Cherubs Orphanage</h2>
+                    <h2 className="text-2xl font-bold mt-4">Cherubs </h2>
                     <p className="text-gray-600 mt-2">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, magnam!
+                        Cherubs was a success. We were able to fundraise an amount to put smiles on the kids' faces
                     </p>
                     <div className="flex justify-between w-full mt-4 text-gray-700">
                         <p>Goal: <span className="font-bold text-green-600">$2000</span></p>
@@ -146,7 +148,7 @@ const Programs = ({setShowDonate}) => {
                     <img src={img4} alt="Saakrom 2025" className="h-48 w-48 object-cover rounded-lg" />
                     <h2 className="text-2xl font-bold mt-4">Charly Home</h2>
                     <p className="text-gray-600 mt-2">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, magnam!
+                        Another successful donation. Read more about the charly home donation in the project section
                     </p>
                     <div className="flex justify-between w-full mt-4 text-gray-700">
                         <p>Goal: <span className="font-bold text-green-600">$2000</span></p>
@@ -157,6 +159,7 @@ const Programs = ({setShowDonate}) => {
                         transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-green-700"
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 0.95 }}
+                        onClick={() => setShowDonate(true)}
                     >
                         Donate
                     </motion.button>
@@ -173,7 +176,7 @@ const Programs = ({setShowDonate}) => {
                     <img src={img5} alt="Saakrom 2025" className="h-48 w-48 object-cover rounded-lg" />
                     <h2 className="text-2xl font-bold mt-4">Saakrom 2025</h2>
                     <p className="text-gray-600 mt-2">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, magnam!
+                        This is our recent donation. Saakrom was one of the most interesting places to be at.
                     </p>
                     <div className="flex justify-between w-full mt-4 text-gray-700">
                         <p>Goal: <span className="font-bold text-green-600">$2000</span></p>
@@ -184,6 +187,7 @@ const Programs = ({setShowDonate}) => {
                         transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-green-700"
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 0.95 }}
+                        onClick={() => setShowDonate(true)}
                     >
                         Donate
                     </motion.button>
@@ -214,9 +218,9 @@ const Programs = ({setShowDonate}) => {
                     className="max-w-md">
                     <h1>Wanna Join Us?</h1>
                     <p>Join us today and let's make the world a better place for underprivileged children and to
-                        women to live.
+                        women to live. 
                     </p>
-                    <button className="">Join us today</button>
+                    <button className="border-green-600 p-4 hover:bg-green-800 transition-all ease-in-out duration-400 rounded-lg bg-green-600 cursor-pointer"> <a href="mailto:phidauxa@gmail.com">Click to send us an email</a>  </button>
                 </motion.div>
             </motion.section>
         </section>

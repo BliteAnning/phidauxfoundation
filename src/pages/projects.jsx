@@ -32,7 +32,7 @@ const projects = [
       id: 4,
       title: "SAAKROM 2025",
       description:
-        "It is a small village with more than 60 pupils and 200 adolescents in the upper elementary and middle school. There was any source of good education in the community. The most successful people in the community are farmers so the youth don't see the essence of going to school but rather involve themselves in farming. The students are not motivated to study at all, so as a Young Philanthropist and Educational Advocate we collaborated with Smile Home Ghana Foundation and Modern-Day Humanitarian to help the people in Saakrom. We used the whole 2024 to make sure we have unveiled the impossibilities in Saakrom. It was easy at all but with the help of God and the whole team, the Saakrom project was a success. We had the project in January 2025. We are most grateful to God Almighty and to my able team to their unwavering support and counseling services in making the dream turn out to be a reality. .",
+        "It is a small village with more than 60 pupils and 200 adolescents in the upper elementary and middle school. There was any source of good education in the community. The most successful people in the community are farmers so the youth don't see the essence of going to school but rather involve themselves in farming. The students are not motivated to study at all, so as a Young Philanthropist and Educational Advocate we collaborated with Smile Home Ghana Foundation and Modern-Day Humanitarian to help the people in Saakrom. We used the whole 2024 to make sure we have unveiled the impossibilities in Saakrom. It was easy at all but with the help of God and the whole team, the Saakrom project was a success. We had the project in January 2025. We are most grateful to God Almighty and to my able team to their unwavering support and counseling services in making the dream turn out to be a reality.",
       image: saakrom,
     },
   ];
@@ -40,11 +40,12 @@ const projects = [
   const ProjectList = () => {
     return (
         
-      <div className="bg-amber-100 w-full min-h-screen">
+      <div className="bg-[#272222] w-full min-h-screen">
         
-        <h2 className="text-3xl font-bold  text-amber-500 mt-20 text-center mb-8">
+        <h2 className="text-3xl font-bold  text-amber-500 py-10 text-center mb-8">
           Our Donation Projects
         </h2>
+
         <div className="px-8 mt-5 ">
           {projects.map((project) => (
             <motion.div
@@ -53,17 +54,19 @@ const projects = [
             transition={{ duration: 0.8, ease: "easeInOut" }}
             viewport={{ once: false, amount: 0.3 }}
               key={project.id}
-              className="bg-white  shadow-lg p-8 hover:shadow-xl transition-shadow"
+              className=" sm:flex sm:gap-3  shadow-lg p-8 hover:shadow-xl transition-shadow"
             >
               <img
                 src={project.image}
                 alt={project.title}
                 className="rounded-lg mb-4 w-full h-72 object-cover"
               />
+              <div >
               <h3 className="text-xl font-semibold text-amber-600 mb-2">
                 {project.title}
               </h3>
-              <p className="text-slate-700  mt-3 text-sm">{project.description}</p>
+              <p className="text-white  mt-3 text-sm">{project.description}</p>
+              </div>
             </motion.div>
           ))}
         </div>

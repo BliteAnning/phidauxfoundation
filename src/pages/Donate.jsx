@@ -82,14 +82,14 @@ const DonationPage = ({ setShowDonate }) => {
     };
 
     return (
-        <div className="absolute z-[1] w-full h-full bg-[rgba(24,22,22,0.5)] grid">
+        <div className=" z-[1] fixed flex flex-col h-screen  justify-center items-center w-full bg-[rgba(24,22,22,0.5)]  ">
 
-            <div className="bg-white  place-self-center shadow-2xl rounded-2xl max-w-lg w-full p-8">
+            <div className="bg-white overflow-y-scroll  shadow-2xl rounded-2xl max-w-lg w-full p-8">
                 <div className='flex justify-between text-green-500 items-center mb-4'>
 
 
                     <h1 className="text-3xl font-bold mb-6 text-center ">
-                        <Heart className="inline-block mr-2" size={32} /> Help us make a difference!
+                        <Heart className="inline-block mr-2" size={32} /> Help  make a difference 
 
                     </h1>
                     <X className="cursor-pointer" size={24} onClick={() => setShowDonate(false)} />
