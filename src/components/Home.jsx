@@ -1,4 +1,3 @@
-import NavBar from "../components/NavBar"
 import { motion } from "framer-motion";
 import landing from '../assets/image/landing.jpg'
 import { SlideDown, SlideLeft, SlideRight, SlideUp } from "../../animate";
