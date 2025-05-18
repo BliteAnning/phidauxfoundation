@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
 import { Heart, CreditCard, Gift, Users, CheckCircle, Loader2, X } from 'lucide-react'; // Import icons
 import axios from 'axios'; // Import axios for HTTP requests
-import { useNavigate } from 'react-router'; // Import useNavigate for navigation
-import JoyfulChild from '../assets/image/joyful_child.jpg'; // Import your image
-import ParticleBg from '../particleBg'
+
 
 const DonationPage = ({ setShowDonate }) => {
     const [donation, setDonation] = useState({
@@ -13,7 +11,7 @@ const DonationPage = ({ setShowDonate }) => {
         message: '',
         
     });
-    const url = "http://localhost:4000"
+    const url = import.meta.env.VITE_API_URL;
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [submissionStatus, setSubmissionStatus] = useState('idle');
     const [errorMessage, setErrorMessage] = useState('');
