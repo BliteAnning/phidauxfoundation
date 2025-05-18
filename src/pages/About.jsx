@@ -68,7 +68,7 @@ const About = () => {
                 </div>
                 </div>
 
-                <div className=" mt-14 place-items-center sm:px-64 mb-10 rounded-xl border-black shadow-2xl">
+                <div className=" mt-14 place-items-center px-4 sm:px-64 mb-10 rounded-xl border-black shadow-2xl">
                     <h1 className="text-xl font-bold">OUR <span className="text-green-500">VALUES</span></h1>
                     <div className="sm:p-6">
                         We are guided by the following core values:

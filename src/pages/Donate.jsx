@@ -11,7 +11,7 @@ const DonationPage = ({ setShowDonate }) => {
         name: '',
         email: '',
         message: '',
-        paymentMethod: 'creditcard', // Default payment method
+        
     });
     const url = "http://localhost:4000"
     const [isSubmitting, setIsSubmitting] = useState(false);
@@ -56,18 +56,17 @@ const DonationPage = ({ setShowDonate }) => {
            const response = await axios.post(url + '/api/donate', donation);
             // Simulate success or failure (replace with actual logic)
             
-            if (response.donation.success) {
+            if (response.data.authorization_url) {
                 setSubmissionStatus('success');
                 setDonation({ // Reset the form
                     amount: 25,
                     name: '',
                     email: '',
                     message: '',
-                    paymentMethod: 'creditcard',
+                    
                     
                 });
-                const sessionUrl = response.data.session_url; // Get the session URL from the response
-                window.location.href = sessionUrl; // Redirect to the Stripe checkout page
+            window.location.href = response.data.authorization_url;
             } else {
                 setSubmissionStatus('error');
                 setErrorMessage('Something went wrong. Please try again.'); // Generic error
@@ -155,19 +154,7 @@ const DonationPage = ({ setShowDonate }) => {
                             className="w-full px-4 py-2 border rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-400"
                         />
                     </div>
-                    <div>
-                        <label className="sr-only">Payment Method</label>
-                        <select
-                            name="paymentMethod"
-                            value={donation.paymentMethod}
-                            onChange={handleSelectChange}
-                            className="w-full px-3 py-2 border border-gray-300/50 rounded-md bg-white/10 text-gray-900 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent"
-                        >
-                            <option value="creditcard">Credit Card</option>
-                            <option value="paypal">PayPal</option>
-                            <option value="giftcard">MoMo</option>
-                        </select>
-                    </div>
+                    
 
                     <button
                         type="submit"
